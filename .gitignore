@@ -1,0 +1,38 @@
+# Environment and Secrets (Never push to remote)
+.env
+.env.*
+.env.local
+!.env.example
+
+# Markdown files (Excluded per user instruction: do not push .md files)
+*.md
+**/*.md
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies and Builds
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Supabase local generated files
+.supabase

@@ -1,0 +1,1503 @@
+[
+  {
+    "id": "c1000000-0000-0000-0000-000000000001",
+    "slug": "pm-kisan",
+    "level": "central",
+    "state_code": null,
+    "category_id": "agriculture",
+    "category": {
+      "id": "agriculture",
+      "pillar": "justice",
+      "name_i18n": {
+        "en": "Agriculture & Farming",
+        "hi": "कृषि एवं किसानी",
+        "mr": "शेती आणि शेतकरी"
+      }
+    },
+    "name_i18n": {
+      "en": "PM Kisan Samman Nidhi",
+      "hi": "प्रधानमंत्री किसान सम्मान निधि",
+      "mr": "प्रधानमंत्री किसान सन्मान निधी"
+    },
+    "summary_i18n": {
+      "en": "Direct income support of ₹6,000 per year to small and marginal farmer families with cultivable land.",
+      "hi": "कृषि योग्य भूमि वाले छोटे और सीमांत किसान परिवारों को ₹6,000 प्रति वर्ष की प्रत्यक्ष आय सहायता।",
+      "mr": "लागवडीयोग्य जमीन असलेल्या शेतकरी कुटुंबांना दरवर्षी ₹६,००० थेट बँक खात्यात आर्थिक मदत."
+    },
+    "benefit_i18n": {
+      "en": "₹6,000 per year paid in three equal 4-monthly installments of ₹2,000 directly via DBT into bank accounts.",
+      "hi": "प्रत्यक्ष बैंक खाते (DBT) में ₹2,000 की तीन समान किस्तों में ₹6,000 प्रति वर्ष।",
+      "mr": "थेट बँक खात्यात प्रत्येकी ₹२,००० च्या ३ हप्त्यांमध्ये वर्षाला ₹६,००० ची थेट रक्कम."
+    },
+    "benefit_tier": 2,
+    "ease": 3,
+    "status": "open",
+    "apply_url": "https://pmkisan.gov.in/",
+    "source_url": "https://pmkisan.gov.in/Documents/OperationalGuidelines.pdf",
+    "last_verified": "2026-09-15",
+    "articles": [
+      "38",
+      "39(b)",
+      "48"
+    ],
+    "is_published": true,
+    "rules": {
+      "all": [
+        {
+          "id": "occ",
+          "field": "occupation",
+          "op": "includes",
+          "value": "farmer",
+          "reasonKey": "r.needFarmer",
+          "fixKey": "fix.needFarmer"
+        },
+        {
+          "id": "land",
+          "field": "landOwner",
+          "op": "eq",
+          "value": true,
+          "reasonKey": "r.needLand",
+          "fixKey": "fix.needLand"
+        },
+        {
+          "id": "tax",
+          "field": "incomeTaxPayer",
+          "op": "eq",
+          "value": false,
+          "reasonKey": "r.noTaxpayer",
+          "fixKey": "fix.noTaxpayer"
+        }
+      ]
+    },
+    "scheme_documents": [
+      {
+        "id": "d-kisan-1",
+        "sort": 1,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Aadhaar Card",
+          "hi": "आधार कार्ड",
+          "mr": "आधार कार्ड"
+        },
+        "hint_i18n": {
+          "en": "UIDAI registered Aadhaar linked to mobile number",
+          "hi": "मोबाइल नंबर से लिंक यूआईडीएआई पंजीकृत आधार",
+          "mr": "मोबाईल नंबरशी जोडलेले आधार कार्ड"
+        }
+      },
+      {
+        "id": "d-kisan-2",
+        "sort": 2,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Land Ownership Record (7/12 Extract / Khatauni)",
+          "hi": "भूमि स्वामित्व प्रमाण (खतौनी / 7/12 नकल)",
+          "mr": "जमीन मालकी उतारा (७/१२ आणि ८-अ उतारा)"
+        },
+        "hint_i18n": {
+          "en": "Obtain from Talathi, Revenue Office or Bhulekh portal",
+          "hi": "भूलेख पोर्टल या पटवारी/तहसील कार्यालय से प्राप्त करें",
+          "mr": "महाभूलेख पोर्टल किंवा तलाठी कार्यालयातून मिळवा"
+        }
+      },
+      {
+        "id": "d-kisan-3",
+        "sort": 3,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Active Bank Account Passbook",
+          "hi": "सक्रिय बैंक खाता पासबुक",
+          "mr": "सक्रिय बँक खाते पासबुक"
+        },
+        "hint_i18n": {
+          "en": "Aadhaar NPCI mapped bank account for DBT transfer",
+          "hi": "डीबीटी के लिए आधार एनपीसीआई से लिंक बैंक खाता",
+          "mr": "डीबीटी हस्तांतरणासाठी आधार व एनपीसीआय लिंक असलेले खाते"
+        }
+      }
+    ],
+    "scheme_steps": [
+      {
+        "id": "s-kisan-1",
+        "sort": 1,
+        "text_i18n": {
+          "en": "Visit official PM-KISAN portal (pmkisan.gov.in) or visit nearest Common Service Centre (CSC).",
+          "hi": "आधिकारिक पीएम-किसान पोर्टल (pmkisan.gov.in) पर जाएं या निकटतम सीएससी केंद्र पर जाएं।",
+          "mr": "अधिकृत पीएम-किसान पोर्टलला भेट द्या किंवा जवळच्या सीएससी केंद्रात जा."
+        }
+      },
+      {
+        "id": "s-kisan-2",
+        "sort": 2,
+        "text_i18n": {
+          "en": "Click on 'New Farmer Registration' and enter your Aadhaar number and state.",
+          "hi": "'नया किसान पंजीकरण' पर क्लिक करें और आधार नंबर व राज्य दर्ज करें।",
+          "mr": "'नवीन शेतकरी नोंदणी' वर क्लिक करा आणि आधार क्रमांक व राज्य प्रविष्ट करा."
+        }
+      },
+      {
+        "id": "s-kisan-3",
+        "sort": 3,
+        "text_i18n": {
+          "en": "Fill land Khatauni details, survey number, and Aadhaar-seeded bank account info.",
+          "hi": "जमीन खतौनी विवरण, खसरा नंबर और आधार से जुड़े बैंक खाते की जानकारी भरें।",
+          "mr": "जमीन गट क्रमांक, खाते क्रमांक आणि आधार लिंक बँक खात्याची माहिती भरा."
+        }
+      },
+      {
+        "id": "s-kisan-4",
+        "sort": 4,
+        "text_i18n": {
+          "en": "Submit application and save the registration reference number to track DBT status.",
+          "hi": "आवेदन जमा करें और स्थिति ट्रैक करने के लिए पंजीकरण संदर्भ संख्या सुरक्षित रखें।",
+          "mr": "अर्ज सबमिट करा आणि डीबीटी स्थिती ट्रॅक करण्यासाठी नोंदणी क्रमांक जतन करा."
+        }
+      }
+    ]
+  },
+  {
+    "id": "c1000000-0000-0000-0000-000000000002",
+    "slug": "ab-pmjay",
+    "level": "central",
+    "state_code": null,
+    "category_id": "health",
+    "category": {
+      "id": "health",
+      "pillar": "justice",
+      "name_i18n": {
+        "en": "Health & Medical",
+        "hi": "स्वास्थ्य एवं चिकित्सा",
+        "mr": "आरोग्य आणि वैद्यकीय"
+      }
+    },
+    "name_i18n": {
+      "en": "Ayushman Bharat PM-JAY",
+      "hi": "आयुष्मान भारत प्रधानमंत्री जन आरोग्य योजना",
+      "mr": "आयुष्मान भारत प्रधानमंत्री जन आरोग्य योजना"
+    },
+    "summary_i18n": {
+      "en": "World's largest health assurance scheme providing ₹5 Lakh cashless hospitalisation cover per family per year.",
+      "hi": "विश्व की सबसे बड़ी स्वास्थ्य सुरक्षा योजना, प्रति परिवार ₹5 लाख तक का कैशलेस अस्पताल इलाज।",
+      "mr": "जगातील सर्वात मोठी आरोग्य योजना; प्रत्येक कुटुंबाला दरवर्षी ₹५ लाखांपर्यंत मोफत कॅशलेस उपचार."
+    },
+    "benefit_i18n": {
+      "en": "₹5,00,000 per family per year for secondary and tertiary inpatient hospital care across 28,000+ empanelled hospitals.",
+      "hi": "प्रति परिवार प्रति वर्ष ₹5,00,000 का निःशुल्क कैशलेस अस्पताल उपचार 28,000+ संबद्ध अस्पतालों में।",
+      "mr": "२८,०००+ संलग्न रुग्णालयांमध्ये प्रति कुटुंब प्रति वर्ष ₹५ लाख रुपयांपर्यंत मोफत उपचार."
+    },
+    "benefit_tier": 3,
+    "ease": 3,
+    "status": "open",
+    "apply_url": "https://beneficiary.nha.gov.in/",
+    "source_url": "https://pmjay.gov.in/about/pmjay",
+    "last_verified": "2026-09-10",
+    "articles": [
+      "21",
+      "41",
+      "47"
+    ],
+    "is_published": true,
+    "rules": {
+      "any": [
+        {
+          "id": "bpl",
+          "field": "bpl",
+          "op": "eq",
+          "value": "yes",
+          "reasonKey": "r.needBpl",
+          "fixKey": "fix.needBpl"
+        },
+        {
+          "id": "senior",
+          "field": "age",
+          "op": "gte",
+          "value": 70,
+          "tolerance": {
+            "abs": 2
+          },
+          "reasonKey": "r.needSenior70",
+          "fixKey": "fix.needSenior70"
+        }
+      ]
+    },
+    "scheme_documents": [
+      {
+        "id": "d-pmjay-1",
+        "sort": 1,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Aadhaar Card",
+          "hi": "आधार कार्ड",
+          "mr": "आधार कार्ड"
+        },
+        "hint_i18n": {
+          "en": "Mandatory for biometric/OTP eKYC verification",
+          "hi": "बायोमेट्रिक/ओटीपी ई-केवाईसी सत्यापन के लिए अनिवार्य",
+          "mr": "बायोमेट्रिक किंवा ओटीपी ई-केवायसी पडताळणीसाठी आवश्यक"
+        }
+      },
+      {
+        "id": "d-pmjay-2",
+        "sort": 2,
+        "mandatory": false,
+        "name_i18n": {
+          "en": "Ration Card (BPL / Antyodaya / Priority Household)",
+          "hi": "राशन कार्ड (बीपीएल / अंत्योदय)",
+          "mr": "रेशन कार्ड (पिवळे / अंत्योदय / प्राधान्य कुटुंब)"
+        },
+        "hint_i18n": {
+          "en": "State food department card with family member names",
+          "hi": "खाद्य विभाग द्वारा जारी परिवार सदस्यों की सूची वाला कार्ड",
+          "mr": "कुटुंबातील सदस्यांची नावे असलेले रेशन कार्ड"
+        }
+      }
+    ],
+    "scheme_steps": [
+      {
+        "id": "s-pmjay-1",
+        "sort": 1,
+        "text_i18n": {
+          "en": "Open beneficiary.nha.gov.in portal or download the Ayushman App on mobile.",
+          "hi": "beneficiary.nha.gov.in पोर्टल खोलें या मोबाइल पर आयुष्मान ऐप डाउनलोड करें।",
+          "mr": "beneficiary.nha.gov.in पोर्टल उघडा किंवा आयुष्मान ॲप डाउनलोड करा."
+        }
+      },
+      {
+        "id": "s-pmjay-2",
+        "sort": 2,
+        "text_i18n": {
+          "en": "Login using your mobile number and authenticate with OTP.",
+          "hi": "अपने मोबाइल नंबर से लॉगिन करें और ओटीपी से प्रमाणित करें।",
+          "mr": "आपल्या मोबाईल क्रमांकाने लॉगिन करा आणि ओटीपीने पडताळणी करा."
+        }
+      },
+      {
+        "id": "s-pmjay-3",
+        "sort": 3,
+        "text_i18n": {
+          "en": "Search your family by Aadhaar number, Ration card, or PMJAY ID.",
+          "hi": "आधार नंबर, राशन कार्ड या पीएमजेएवाई आईडी से परिवार खोजें।",
+          "mr": "आधार नंबर, रेशन कार्ड किंवा पीएमजेएवाय आयडीने कुटुंब शोधा."
+        }
+      },
+      {
+        "id": "s-pmjay-4",
+        "sort": 4,
+        "text_i18n": {
+          "en": "Complete face or Aadhaar OTP eKYC to immediately generate and download your Ayushman Card.",
+          "hi": "चेहरा या आधार ओटीपी ई-केवाईसी पूरा करें और तुरंत आयुष्मान कार्ड डाउनलोड करें।",
+          "mr": "चेहरा किंवा आधार ओटीपी ई-केवायसी पूर्ण करा आणि त्वरित आयुष्मान कार्ड डाउनलोड करा."
+        }
+      }
+    ]
+  },
+  {
+    "id": "c1000000-0000-0000-0000-000000000003",
+    "slug": "pm-ujjwala",
+    "level": "central",
+    "state_code": null,
+    "category_id": "women",
+    "category": {
+      "id": "women",
+      "pillar": "equality",
+      "name_i18n": {
+        "en": "Women Empowerment & Family",
+        "hi": "महिला सशक्तिकरण एवं परिवार",
+        "mr": "महिला सक्षमीकरण आणि कुटुंब"
+      }
+    },
+    "name_i18n": {
+      "en": "Pradhan Mantri Ujjwala Yojana 2.0",
+      "hi": "प्रधानमंत्री उज्ज्वला योजना २.०",
+      "mr": "प्रधानमंत्री उज्ज्वला योजना २.०"
+    },
+    "summary_i18n": {
+      "en": "Free LPG cooking gas connection for adult women of low-income and BPL households.",
+      "hi": "कम आय और बीपीएल परिवारों की वयस्क महिलाओं के लिए मुफ्त एलपीजी गैस कनेक्शन।",
+      "mr": "कमी उत्पन्न आणि बीपीएल कुटुंबातील प्रौढ महिलांसाठी मोफत एलपीजी गॅस जोडणी."
+    },
+    "benefit_i18n": {
+      "en": "Free LPG connection with deposit fee waiver, along with a free first cylinder refill and gas stove.",
+      "hi": "जमा राशि मुक्त मुफ्त एलपीजी कनेक्शन, साथ में पहली रिफिल और गैस चूल्हा पूरी तरह मुफ्त।",
+      "mr": "विनामूल्य गॅस सिलिंडर जोडणी, मोफत पहिला गॅस सिलिंडर आणि मोफत शेगडी."
+    },
+    "benefit_tier": 2,
+    "ease": 3,
+    "status": "open",
+    "apply_url": "https://www.pmuy.gov.in/index.aspx",
+    "source_url": "https://www.pmuy.gov.in/about.html",
+    "last_verified": "2026-08-20",
+    "articles": [
+      "15(3)",
+      "39(a)",
+      "47"
+    ],
+    "is_published": true,
+    "rules": {
+      "all": [
+        {
+          "id": "gen",
+          "field": "gender",
+          "op": "eq",
+          "value": "female",
+          "reasonKey": "r.needFemale",
+          "fixKey": "fix.needFemale"
+        },
+        {
+          "id": "age",
+          "field": "age",
+          "op": "gte",
+          "value": 18,
+          "reasonKey": "r.needAge18",
+          "fixKey": "fix.needAge18"
+        },
+        {
+          "id": "bpl",
+          "field": "bpl",
+          "op": "eq",
+          "value": "yes",
+          "reasonKey": "r.needBpl",
+          "fixKey": "fix.needBpl"
+        }
+      ]
+    },
+    "scheme_documents": [
+      {
+        "id": "d-pmuy-1",
+        "sort": 1,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Aadhaar Card of the applicant woman",
+          "hi": "आवेदक महिला का आधार कार्ड",
+          "mr": "अर्जदार महिलेचे आधार कार्ड"
+        },
+        "hint_i18n": {
+          "en": "Proof of identity and address",
+          "hi": "पहचान और पते का प्रमाण",
+          "mr": "ओळख आणि पत्त्याचा पुरावा"
+        }
+      },
+      {
+        "id": "d-pmuy-2",
+        "sort": 2,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Ration Card or BPL Certificate",
+          "hi": "राशन कार्ड या बीपीएल प्रमाणपत्र",
+          "mr": "रेशन कार्ड किंवा बीपीएल दाखला"
+        },
+        "hint_i18n": {
+          "en": "Showing family composition or 14-point declaration",
+          "hi": "परिवार संरचना या 14-सूत्रीय घोषणा पत्र",
+          "mr": "कुटुंब रचना किंवा १४-मुद्द्यांचे स्वयंघोषणापत्र"
+        }
+      },
+      {
+        "id": "d-pmuy-3",
+        "sort": 3,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Bank Account Passbook (IFSC)",
+          "hi": "बैंक खाता पासबुक (आईएफएससी)",
+          "mr": "बँक खाते पासबुक (आयएफएससी)"
+        },
+        "hint_i18n": {
+          "en": "Woman's individual savings bank account",
+          "hi": "महिला का व्यक्तिगत बचत बैंक खाता",
+          "mr": "महिलेचे वैयक्तिक बचत खाते"
+        }
+      }
+    ],
+    "scheme_steps": [
+      {
+        "id": "s-pmuy-1",
+        "sort": 1,
+        "text_i18n": {
+          "en": "Visit nearest Indane, Bharatgas, or HP Gas distributor, or apply online at pmuy.gov.in.",
+          "hi": "निकटतम इंडेन, भारतगैस या एचपी गैस वितरक के पास जाएं या pmuy.gov.in पर ऑनलाइन आवेदन करें।",
+          "mr": "जवळच्या इंडेन, भारत गॅस किंवा एचपी गॅस वितरकाकडे जा किंवा pmuy.gov.in वर अर्ज करा."
+        }
+      },
+      {
+        "id": "s-pmuy-2",
+        "sort": 2,
+        "text_i18n": {
+          "en": "Submit Ujjwala application form with Aadhaar and family ration card.",
+          "hi": "आधार और परिवार राशन कार्ड के साथ उज्ज्वला आवेदन पत्र जमा करें।",
+          "mr": "आधार आणि कौटुंबिक रेशन कार्डसह उज्ज्वला अर्ज सादर करा."
+        }
+      },
+      {
+        "id": "s-pmuy-3",
+        "sort": 3,
+        "text_i18n": {
+          "en": "Distributor verifies address and ensures no existing LPG connection exists in household.",
+          "hi": "वितरक पते का सत्यापन करता है और सुनिश्चित करता है कि परिवार में कोई पुराना कनेक्शन नहीं है।",
+          "mr": "वितरक घराची पडताळणी करेल की कुटुंबात आधीपासून गॅस जोडणी नाही."
+        }
+      },
+      {
+        "id": "s-pmuy-4",
+        "sort": 4,
+        "text_i18n": {
+          "en": "Collect your gas cylinder, regulator, and stove free of cost.",
+          "hi": "अपना गैस सिलेंडर, रेगुलेटर और चूल्हा निःशुल्क प्राप्त करें।",
+          "mr": "आपला गॅस सिलिंडर, रेग्युलेटर आणि शेगडी विनामूल्य मिळवा."
+        }
+      }
+    ]
+  },
+  {
+    "id": "c1000000-0000-0000-0000-000000000004",
+    "slug": "atal-pension",
+    "level": "central",
+    "state_code": null,
+    "category_id": "pension",
+    "category": {
+      "id": "pension",
+      "pillar": "fraternity",
+      "name_i18n": {
+        "en": "Pension & Social Security",
+        "hi": "पेंशन एवं सामाजिक सुरक्षा",
+        "mr": "पेन्शन आणि सामाजिक सुरक्षा"
+      }
+    },
+    "name_i18n": {
+      "en": "Atal Pension Yojana (APY)",
+      "hi": "अटल पेंशन योजना",
+      "mr": "अटल पेन्शन योजना"
+    },
+    "summary_i18n": {
+      "en": "Government-backed guaranteed pension scheme for unorganised sector workers between 18 and 40 years.",
+      "hi": "18 से 40 वर्ष के असंगठित क्षेत्र के कामगारों के लिए सरकार द्वारा समर्थित गारंटीकृत पेंशन योजना।",
+      "mr": "१८ ते ४० वयोगटातील असंघटित कामगारांसाठी सरकारची हमी असलेली पेन्शन योजना."
+    },
+    "benefit_i18n": {
+      "en": "Guaranteed minimum monthly pension of ₹1,000, ₹2,000, ₹3,000, ₹4,000 or ₹5,000 from age 60 until lifetime.",
+      "hi": "60 वर्ष की आयु से आजीवन ₹1,000 से ₹5,000 प्रति माह की गारंटीकृत न्यूनतम पेंशन।",
+      "mr": "वयाच्या ६० वर्षांनंतर आयुष्यभर दरमहा ₹१,००० ते ₹५,००० ची खात्रीशीर पेन्शन."
+    },
+    "benefit_tier": 2,
+    "ease": 3,
+    "status": "open",
+    "apply_url": "https://www.npscra.proteantech.in/",
+    "source_url": "https://www.npscra.proteantech.in/",
+    "last_verified": "2026-09-01",
+    "articles": [
+      "41",
+      "43"
+    ],
+    "is_published": true,
+    "rules": {
+      "all": [
+        {
+          "id": "age",
+          "field": "age",
+          "op": "between",
+          "value": [
+            18,
+            40
+          ],
+          "tolerance": {
+            "abs": 1
+          },
+          "reasonKey": "r.age18to40",
+          "fixKey": "fix.age18to40"
+        },
+        {
+          "id": "bank",
+          "field": "hasBankAccount",
+          "op": "eq",
+          "value": true,
+          "fixable": true,
+          "reasonKey": "r.needBank",
+          "fixKey": "fix.needBank"
+        },
+        {
+          "id": "tax",
+          "field": "incomeTaxPayer",
+          "op": "eq",
+          "value": false,
+          "reasonKey": "r.noTaxpayer",
+          "fixKey": "fix.noTaxpayer"
+        }
+      ]
+    },
+    "scheme_documents": [
+      {
+        "id": "d-apy-1",
+        "sort": 1,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Aadhaar Card",
+          "hi": "आधार कार्ड",
+          "mr": "आधार कार्ड"
+        },
+        "hint_i18n": {
+          "en": "For subscriber identification and nominee setup",
+          "hi": "अंशदाता पहचान और नामांकित व्यक्ति निर्धारण हेतु",
+          "mr": "ओळख आणि वारसदार नोंदणीसाठी"
+        }
+      },
+      {
+        "id": "d-apy-2",
+        "sort": 2,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Savings Bank or Post Office Account Passbook",
+          "hi": "बचत बैंक या डाकघर खाता पासबुक",
+          "mr": "बचत बँक किंवा टपाल कार्यालय खाते पासबुक"
+        },
+        "hint_i18n": {
+          "en": "Must have auto-debit facility enabled",
+          "hi": "ऑटो-डेबिट सुविधा सक्षम होनी चाहिए",
+          "mr": "स्वयंचलित हप्ता कपातीसाठी (Auto-debit) सक्रिय खाते"
+        }
+      }
+    ],
+    "scheme_steps": [
+      {
+        "id": "s-apy-1",
+        "sort": 1,
+        "text_i18n": {
+          "en": "Visit the bank or post office branch where you hold your savings account, or log in to Netbanking/Mobile App.",
+          "hi": "जिस बैंक या डाकघर में आपका खाता है, वहां जाएं या नेटबैंकिंग/मोबाइल ऐप में लॉगिन करें।",
+          "mr": "आपले खाते असलेल्या बँकेत/टपाल कार्यालयात जा किंवा नेटबँकिंग उघडा."
+        }
+      },
+      {
+        "id": "s-apy-2",
+        "sort": 2,
+        "text_i18n": {
+          "en": "Fill the APY registration form, choose your desired pension slab (₹1,000 to ₹5,000), and add nominee.",
+          "hi": "एपीवाई पंजीकरण फॉर्म भरें, वांछित पेंशन स्लैब (₹1,000 से ₹5,000) चुनें और नॉमिनी जोड़ें।",
+          "mr": "एपीवाय नोंदणी अर्ज भरा, पेन्शन रक्कम (₹१,००० ते ₹५,०००) निवडा आणि वारसदार जोडा."
+        }
+      },
+      {
+        "id": "s-apy-3",
+        "sort": 3,
+        "text_i18n": {
+          "en": "Authorize monthly auto-debit of subscription amount from your bank account.",
+          "hi": "अपने खाते से मासिक अंशदान के ऑटो-डेबिट को अधिकृत करें।",
+          "mr": "दरमहा हप्ता कापण्यासाठी बँकेला ऑटो-डेबिट संमती द्या."
+        }
+      },
+      {
+        "id": "s-apy-4",
+        "sort": 4,
+        "text_i18n": {
+          "en": "Receive your PRAN (Permanent Retirement Account Number) card confirmation via SMS.",
+          "hi": "एसएमएस द्वारा अपना प्रान (स्थायी सेवानिवृत्ति खाता संख्या) कार्ड प्राप्त करें।",
+          "mr": "आपल्या मोबाईलवर एसएमएसद्वारे प्रान (PRAN) क्रमांक प्राप्त करा."
+        }
+      }
+    ]
+  },
+  {
+    "id": "c1000000-0000-0000-0000-000000000005",
+    "slug": "ignoaps-old-age",
+    "level": "central",
+    "state_code": null,
+    "category_id": "pension",
+    "category": {
+      "id": "pension",
+      "pillar": "fraternity",
+      "name_i18n": {
+        "en": "Pension & Social Security",
+        "hi": "पेंशन एवं सामाजिक सुरक्षा",
+        "mr": "पेन्शन आणि सामाजिक सुरक्षा"
+      }
+    },
+    "name_i18n": {
+      "en": "Indira Gandhi National Old Age Pension (IGNOAPS)",
+      "hi": "इंदिरा गांधी राष्ट्रीय वृद्धावस्था पेंशन योजना",
+      "mr": "इंदिरा गांधी राष्ट्रीय वृद्धापकाळ निवृत्तीवेतन योजना"
+    },
+    "summary_i18n": {
+      "en": "Monthly non-contributory pension for senior citizens aged 60+ living below the poverty line (BPL).",
+      "hi": "गरीबी रेखा से नीचे (बीपीएल) रहने वाले 60+ वर्ष के वरिष्ठ नागरिकों के लिए मासिक पेंशन।",
+      "mr": "दारिद्र्यरेषेखालील (BPL) ६० वर्षे व त्यावरील ज्येष्ठ नागरिकांसाठी मासिक निवृत्तीवेतन."
+    },
+    "benefit_i18n": {
+      "en": "Monthly pension of ₹200–₹500 from Central Gov, augmented up to ₹1,000–₹2,500/month by State Government top-ups.",
+      "hi": "केंद्र से ₹200–₹500 प्रति माह + राज्य सरकारों द्वारा ₹1,000 से ₹2,500 प्रति माह तक अतिरिक्त सहायता।",
+      "mr": "दरमहा केंद्र आणि राज्य शासनाकडून ₹१,००० ते ₹२,५०० पर्यंत थेट मासिक पेन्शन."
+    },
+    "benefit_tier": 2,
+    "ease": 2,
+    "status": "open",
+    "apply_url": "https://nsap.dord.gov.in/",
+    "source_url": "https://nsap.dord.gov.in/",
+    "last_verified": "2026-08-15",
+    "articles": [
+      "41"
+    ],
+    "is_published": true,
+    "rules": {
+      "all": [
+        {
+          "id": "age",
+          "field": "age",
+          "op": "gte",
+          "value": 60,
+          "tolerance": {
+            "abs": 2
+          },
+          "reasonKey": "r.needAge60",
+          "fixKey": "fix.needAge60"
+        },
+        {
+          "id": "bpl",
+          "field": "bpl",
+          "op": "eq",
+          "value": "yes",
+          "reasonKey": "r.needBpl",
+          "fixKey": "fix.needBpl"
+        }
+      ]
+    },
+    "scheme_documents": [
+      {
+        "id": "d-nsap-1",
+        "sort": 1,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Age Proof (Voter ID / Birth Certificate / Aadhaar)",
+          "hi": "आयु प्रमाण (मतदाता पहचान पत्र / जन्म प्रमाण पत्र / आधार)",
+          "mr": "वयाचा पुरावा (मतदार ओळखपत्र / जन्म दाखला / आधार कार्ड)"
+        },
+        "hint_i18n": {
+          "en": "Document showing age 60 years or above",
+          "hi": "60 वर्ष या अधिक आयु दर्शाने वाला दस्तावेज",
+          "mr": "वय ६० वर्षे किंवा जास्त असल्याचे दर्शवणारे कागदपत्र"
+        }
+      },
+      {
+        "id": "d-nsap-2",
+        "sort": 2,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "BPL Card / SECC Household Listing",
+          "hi": "बीपीएल कार्ड / एसईसीसी सूची प्रमाण",
+          "mr": "बीपीएल कार्ड / दारिद्र्यरेषेखालील यादीत नाव"
+        },
+        "hint_i18n": {
+          "en": "Issued by Gram Panchayat or Municipal Body",
+          "hi": "ग्राम पंचायत या नगर पालिका द्वारा जारी",
+          "mr": "ग्रामपंचायत किंवा नगरपालिकेकडून प्रमाणित"
+        }
+      },
+      {
+        "id": "d-nsap-3",
+        "sort": 3,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Bank / Post Office Passbook",
+          "hi": "बैंक / डाकघर खाता पासबुक",
+          "mr": "बँक किंवा पोस्ट पासबुक"
+        },
+        "hint_i18n": {
+          "en": "Single bank account seeded with Aadhaar",
+          "hi": "आधार से लिंक एकल बैंक खाता",
+          "mr": "आधार संलग्न वैयक्तिक बँक खाते"
+        }
+      }
+    ],
+    "scheme_steps": [
+      {
+        "id": "s-nsap-1",
+        "sort": 1,
+        "text_i18n": {
+          "en": "Obtain application form from Gram Panchayat / Block Development Office / Municipal Ward or download from nsap.nic.in.",
+          "hi": "ग्राम पंचायत / बीडीओ कार्यालय / नगर वार्ड से फॉर्म लें या nsap.nic.in से डाउनलोड करें।",
+          "mr": "ग्रामपंचायत / पंचायत समिती / नगरपालिका कार्यालयातून अर्ज घ्या किंवा संकेतस्थळावरून डाउनलोड करा."
+        }
+      },
+      {
+        "id": "s-nsap-2",
+        "sort": 2,
+        "text_i18n": {
+          "en": "Attach attested copy of BPL card, Age proof, and bank passbook photocopy.",
+          "hi": "बीपीएल कार्ड, आयु प्रमाण और बैंक पासबुक की स्वप्रमाणित प्रति संलग्न करें।",
+          "mr": "बीपीएल कार्ड, वयाचा पुरावा आणि बँक पासबुकची प्रत जोडा."
+        }
+      },
+      {
+        "id": "s-nsap-3",
+        "sort": 3,
+        "text_i18n": {
+          "en": "Submit form to Social Welfare Officer or Taluka Tehsildar.",
+          "hi": "समाज कल्याण अधिकारी या तहसील कार्यालय में आवेदन जमा करें।",
+          "mr": "समाजकल्याण अधिकारी किंवा तहसीलदारांकडे अर्ज सादर करा."
+        }
+      },
+      {
+        "id": "s-nsap-4",
+        "sort": 4,
+        "text_i18n": {
+          "en": "After field verification, monthly pension begins directly into bank account via DBT.",
+          "hi": "सत्यापन के पश्चात मासिक पेंशन सीधे बैंक खाते में डीबीटी द्वारा शुरू हो जाएगी।",
+          "mr": "तपासणी पूर्ण झाल्यावर दरमहा पेन्शन थेट बँक खात्यात जमा होईल."
+        }
+      }
+    ]
+  },
+  {
+    "id": "c1000000-0000-0000-0000-000000000006",
+    "slug": "pm-matru-vandana",
+    "level": "central",
+    "state_code": null,
+    "category_id": "women",
+    "category": {
+      "id": "women",
+      "pillar": "equality",
+      "name_i18n": {
+        "en": "Women Empowerment & Family",
+        "hi": "महिला सशक्तिकरण एवं परिवार",
+        "mr": "महिला सक्षमीकरण आणि कुटुंब"
+      }
+    },
+    "name_i18n": {
+      "en": "Pradhan Mantri Matru Vandana Yojana (PMMVY)",
+      "hi": "प्रधानमंत्री मातृ वंदना योजना",
+      "mr": "प्रधानमंत्री मातृ वंदना योजना"
+    },
+    "summary_i18n": {
+      "en": "Maternity benefit cash incentive of ₹5,000 for pregnant women and lactating mothers for health and nutrition.",
+      "hi": "गर्भवती महिलाओं और स्तनपान कराने वाली माताओं के स्वास्थ्य व पोषण हेतु ₹5,000 की मातृत्व प्रोत्साहन राशि।",
+      "mr": "गर्भवती महिला आणि स्तनदा मातांच्या आरोग्यासाठी आणि पोषणासाठी ₹५,००० ची मातृत्व आर्थिक मदत."
+    },
+    "benefit_i18n": {
+      "en": "₹5,000 cash benefit paid in two installments via DBT to compensate wage loss during pregnancy and child birth.",
+      "hi": "मजदूरी के नुकसान की भरपाई के लिए दो किस्तों में प्रत्यक्ष लाभ हस्तांतरण (DBT) से ₹5,000।",
+      "mr": "गरोदरपणात बुडणाऱ्या मजुरीची भरपाई म्हणून थेट बँक खात्यात ₹५,००० ची रोख मदत."
+    },
+    "benefit_tier": 2,
+    "ease": 3,
+    "status": "open",
+    "apply_url": "https://pmmvy.wcd.gov.in/",
+    "source_url": "https://wcd.nic.in/schemes/pradhan-mantri-matru-vandana-yojana",
+    "last_verified": "2026-08-30",
+    "articles": [
+      "15(3)",
+      "42"
+    ],
+    "is_published": true,
+    "rules": {
+      "all": [
+        {
+          "id": "gen",
+          "field": "gender",
+          "op": "eq",
+          "value": "female",
+          "reasonKey": "r.needFemale",
+          "fixKey": "fix.needFemale"
+        },
+        {
+          "id": "preg",
+          "field": "pregnantOrNursing",
+          "op": "eq",
+          "value": true,
+          "reasonKey": "r.needPregnantOrNursing",
+          "fixKey": "fix.needPregnantOrNursing"
+        }
+      ]
+    },
+    "scheme_documents": [
+      {
+        "id": "d-pmmvy-1",
+        "sort": 1,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Mother and Child Protection (MCP) Card",
+          "hi": "मातृ एवं शिशु सुरक्षा (एमसीपी) कार्ड",
+          "mr": "माता आणि बाल संरक्षण (MCP) कार्ड"
+        },
+        "hint_i18n": {
+          "en": "Issued by Anganwadi Centre or Primary Health Centre",
+          "hi": "आंगनवाड़ी केंद्र या प्राथमिक स्वास्थ्य केंद्र द्वारा जारी",
+          "mr": "अंगणवाडी किंवा प्राथमिक आरोग्य केंद्राकडून मिळणारे कार्ड"
+        }
+      },
+      {
+        "id": "d-pmmvy-2",
+        "sort": 2,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Aadhaar Card of Mother and Husband",
+          "hi": "माता और पति का आधार कार्ड",
+          "mr": "माता आणि पतीचे आधार कार्ड"
+        },
+        "hint_i18n": {
+          "en": "Mandatory identity proof for enrollment",
+          "hi": "पंजीकरण के लिए अनिवार्य पहचान प्रमाण",
+          "mr": "नोंदणीसाठी आवश्यक ओळखपत्र"
+        }
+      },
+      {
+        "id": "d-pmmvy-3",
+        "sort": 3,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Mother's Individual Bank Account Passbook",
+          "hi": "माता का व्यक्तिगत बैंक खाता पासबुक",
+          "mr": "मातेचे वैयक्तिक बँक पासबुक"
+        },
+        "hint_i18n": {
+          "en": "DBT enabled bank account in mother's name only",
+          "hi": "केवल माता के नाम पर डीबीटी सक्षम बैंक खाता",
+          "mr": "केवळ मातेच्या नावावरील डीबीटी संलग्न खाते"
+        }
+      }
+    ],
+    "scheme_steps": [
+      {
+        "id": "s-pmmvy-1",
+        "sort": 1,
+        "text_i18n": {
+          "en": "Register pregnancy within 570 days of Last Menstrual Period (LMP) at nearest Anganwadi Centre (AWC).",
+          "hi": "मासिक धर्म की अंतिम तिथि (LMP) के 570 दिनों के भीतर नजदीकी आंगनवाड़ी केंद्र (AWC) में पंजीकरण कराएं।",
+          "mr": "जवळच्या अंगणवाडी केंद्रात गरोदरपणाची नोंदणी करा."
+        }
+      },
+      {
+        "id": "s-pmmvy-2",
+        "sort": 2,
+        "text_i18n": {
+          "en": "Submit Form 1A along with MCP card copy, Aadhaar, and bank details (or apply online on pmmvy.wcd.gov.in).",
+          "hi": "एमसीपी कार्ड प्रति, आधार और बैंक विवरण के साथ फॉर्म 1A जमा करें (या pmmvy.wcd.gov.in पर ऑनलाइन भरें)।",
+          "mr": "फॉर्म १-ए भरून आवश्यक कागदपत्रांसह अंगणवाडी सेविकेकडे द्या किंवा ऑनलाइन अर्ज करा."
+        }
+      },
+      {
+        "id": "s-pmmvy-3",
+        "sort": 3,
+        "text_i18n": {
+          "en": "Undergo required Antenatal Check-up (ANC) to receive 1st installment of ₹3,000.",
+          "hi": "₹3,000 की पहली किस्त प्राप्त करने के लिए आवश्यक प्रसव पूर्व जांच (ANC) कराएं।",
+          "mr": "पहिली ₹३,००० ची रक्कम मिळवण्यासाठी प्राथमिक आरोग्य तपासणी (ANC) पूर्ण करा."
+        }
+      },
+      {
+        "id": "s-pmmvy-4",
+        "sort": 4,
+        "text_i18n": {
+          "en": "Complete child birth registration and first cycle of vaccinations to receive 2nd installment of ₹2,000.",
+          "hi": "शिशु जन्म पंजीकरण और टीकाकरण का पहला चक्र पूरा करने पर ₹2,000 की दूसरी किस्त पाएं।",
+          "mr": "बाळाची जन्म नोंदणी व पहिले लसीकरण पूर्ण झाल्यावर ₹२,००० चा दुसरा हप्ता मिळवा."
+        }
+      }
+    ]
+  },
+  {
+    "id": "c1000000-0000-0000-0000-000000000007",
+    "slug": "sukanya-samriddhi",
+    "level": "central",
+    "state_code": null,
+    "category_id": "education",
+    "category": {
+      "id": "education",
+      "pillar": "equality",
+      "name_i18n": {
+        "en": "Education & Youth",
+        "hi": "शिक्षा एवं युवा",
+        "mr": "शिक्षण आणि युवा"
+      }
+    },
+    "name_i18n": {
+      "en": "Sukanya Samriddhi Yojana (SSY)",
+      "hi": "सुकन्या समृद्धि योजना",
+      "mr": "सुकन्या समृद्धी योजना"
+    },
+    "summary_i18n": {
+      "en": "High-interest savings scheme by the Government for the girl child under 'Beti Bachao Beti Padhao'.",
+      "hi": "'बेटी बचाओ बेटी पढ़ाओ' अभियान के तहत बालिकाओं के उज्ज्वल भविष्य के लिए उच्च ब्याज बचत योजना।",
+      "mr": "'बेटी बचाओ बेटी पढाओ' अंतर्गत मुलींच्या उज्ज्वल भविष्यासाठी उच्च व्याज देणारी सरकारी योजना."
+    },
+    "benefit_i18n": {
+      "en": "Attractive government interest rate (8.2%), compound annual returns, and triple tax exemption (EEE) under Section 80C.",
+      "hi": "8.2% की आकर्षक ब्याज दर, वार्षिक चक्रवृद्धि ब्याज, तथा धारा 80C के तहत पूर्ण कर छूट।",
+      "mr": "८.२% आकर्षक व्याजदर, वार्षिक चक्रवाढ आणि ८०-सी अंतर्गत पूर्ण कर सवलत."
+    },
+    "benefit_tier": 2,
+    "ease": 3,
+    "status": "open",
+    "apply_url": "https://www.indiapost.gov.in/",
+    "source_url": "https://www.nsiindia.gov.in/InternalPage.aspx?Id_Pk=89",
+    "last_verified": "2026-09-01",
+    "articles": [
+      "15(3)",
+      "21A",
+      "39(f)"
+    ],
+    "is_published": true,
+    "rules": {
+      "all": [
+        {
+          "id": "daughter",
+          "field": "daughterUnder10",
+          "op": "eq",
+          "value": true,
+          "reasonKey": "r.needDaughterUnder10",
+          "fixKey": "fix.needDaughterUnder10"
+        }
+      ]
+    },
+    "scheme_documents": [
+      {
+        "id": "d-ssy-1",
+        "sort": 1,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Birth Certificate of the Girl Child",
+          "hi": "बालिका का जन्म प्रमाण पत्र",
+          "mr": "मुलीचा जन्म दाखला"
+        },
+        "hint_i18n": {
+          "en": "Issued by municipal corporation or registrar of births",
+          "hi": "नगर निगम या जन्म निबंधक द्वारा जारी प्रमाण पत्र",
+          "mr": "नगरपालिका किंवा ग्रामपंचायतीने दिलेला जन्म दाखला"
+        }
+      },
+      {
+        "id": "d-ssy-2",
+        "sort": 2,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Parent or Guardian's Aadhaar & PAN Card",
+          "hi": "माता-पिता या अभिभावक का आधार व पैन कार्ड",
+          "mr": "पालकांचे आधार आणि पॅन कार्ड"
+        },
+        "hint_i18n": {
+          "en": "Identity and address proof of the account operator",
+          "hi": "खाता संचालक की पहचान और पते का प्रमाण",
+          "mr": "खाते चालवणाऱ्या पालकाचा ओळख पुरावा"
+        }
+      },
+      {
+        "id": "d-ssy-3",
+        "sort": 3,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Passport Size Photographs",
+          "hi": "पासपोर्ट आकार के फोटो",
+          "mr": "पासपोर्ट आकाराची छायाचित्रे"
+        },
+        "hint_i18n": {
+          "en": "Photographs of girl child and guardian",
+          "hi": "बालिका और अभिभावक के फोटो",
+          "mr": "मुलगी आणि पालकांचे फोटो"
+        }
+      }
+    ],
+    "scheme_steps": [
+      {
+        "id": "s-ssy-1",
+        "sort": 1,
+        "text_i18n": {
+          "en": "Visit any Post Office branch or authorised public/private sector bank.",
+          "hi": "किसी भी डाकघर शाखा या अधिकृत सरकारी/निजी बैंक शाखा में जाएं।",
+          "mr": "कोणत्याही पोस्ट ऑफिस किंवा अधिकृत बँकेच्या शाखेत जा."
+        }
+      },
+      {
+        "id": "s-ssy-2",
+        "sort": 2,
+        "text_i18n": {
+          "en": "Fill the Sukanya Samriddhi Account (SSA) opening form with girl's birth details.",
+          "hi": "बालिका के जन्म विवरण के साथ सुकन्या समृद्धि खाता (एसएसए) फॉर्म भरें।",
+          "mr": "सुकन्या समृद्धी खाते उघडण्याचा अर्ज भरून मुलीची माहिती द्या."
+        }
+      },
+      {
+        "id": "s-ssy-3",
+        "sort": 3,
+        "text_i18n": {
+          "en": "Deposit initial opening amount (minimum ₹250, maximum ₹1,50,000 per financial year).",
+          "hi": "प्रारंभिक राशि जमा करें (न्यूनतम ₹250, अधिकतम ₹1,50,000 प्रति वित्तीय वर्ष)।",
+          "mr": "किमान ₹२५० ची रक्कम भरून खाते सुरू करा (एका वर्षात जास्तीत जास्त ₹१.५ लाख)."
+        }
+      },
+      {
+        "id": "s-ssy-4",
+        "sort": 4,
+        "text_i18n": {
+          "en": "Receive your account passbook immediately for recording ongoing deposits.",
+          "hi": "जमा राशि रिकॉर्ड करने के लिए तुरंत अपनी खाता पासबुक प्राप्त करें।",
+          "mr": "ठेव नोंदीसाठी त्वरित खाते पासबुक मिळवा."
+        }
+      }
+    ]
+  },
+  {
+    "id": "c1000000-0000-0000-0000-000000000008",
+    "slug": "pm-vishwakarma",
+    "level": "central",
+    "state_code": null,
+    "category_id": "livelihood",
+    "category": {
+      "id": "livelihood",
+      "pillar": "liberty",
+      "name_i18n": {
+        "en": "Livelihood & Enterprise",
+        "hi": "आजीविका एवं उद्यम",
+        "mr": "उपजीविका आणि उद्योग"
+      }
+    },
+    "name_i18n": {
+      "en": "PM Vishwakarma Scheme",
+      "hi": "पीएम विश्वकर्मा योजना",
+      "mr": "पीएम विश्वकर्मा योजना"
+    },
+    "summary_i18n": {
+      "en": "Holistic support for traditional artisans and craftspeople working with their hands and tools across 18 trades.",
+      "hi": "18 पारंपरिक व्यवसायों में हाथ और औजारों से काम करने वाले कारीगरों और शिल्पकारों को समग्र सहायता।",
+      "mr": "१८ पारंपारिक व्यवसायांमधील कारागीर आणि शिल्पकारांसाठी सर्वसमावेशक सरकारी योजना."
+    },
+    "benefit_i18n": {
+      "en": "Collateral-free enterprise credit up to ₹3 Lakh at 5% interest, ₹15,000 modern toolkit incentive, skill stipend ₹500/day.",
+      "hi": "5% रियायती ब्याज पर ₹3 लाख तक का कोलैटरल-मुक्त ऋण, ₹15,000 का आधुनिक टूलकिट वाउचर, और ₹500/दिन प्रशिक्षण भत्ता।",
+      "mr": "५% सवलतीच्या व्याजाने ₹३ लाखांपर्यंत विनातारण कर्ज, ₹१५,००० चे टूलकिट अनुदान, दरमहा ₹५००/दिवस प्रशिक्षण भत्ता."
+    },
+    "benefit_tier": 3,
+    "ease": 2,
+    "status": "open",
+    "apply_url": "https://pmvishwakarma.gov.in/",
+    "source_url": "https://pmvishwakarma.gov.in/Home/Guidelines",
+    "last_verified": "2026-09-05",
+    "articles": [
+      "19(1)(g)",
+      "43"
+    ],
+    "is_published": true,
+    "rules": {
+      "all": [
+        {
+          "id": "occ",
+          "field": "occupation",
+          "op": "includes",
+          "value": "artisan",
+          "reasonKey": "r.needArtisan",
+          "fixKey": "fix.needArtisan"
+        },
+        {
+          "id": "age",
+          "field": "age",
+          "op": "gte",
+          "value": 18,
+          "reasonKey": "r.needAge18",
+          "fixKey": "fix.needAge18"
+        }
+      ]
+    },
+    "scheme_documents": [
+      {
+        "id": "d-vish-1",
+        "sort": 1,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Aadhaar Card",
+          "hi": "आधार कार्ड",
+          "mr": "आधार कार्ड"
+        },
+        "hint_i18n": {
+          "en": "Linked to active mobile number for biometric authentication",
+          "hi": "बायोमेट्रिक सत्यापन हेतु सक्रिय मोबाइल नंबर से लिंक",
+          "mr": "बायोमेट्रिक पडताळणीसाठी मोबाईल संलग्न आधार"
+        }
+      },
+      {
+        "id": "d-vish-2",
+        "sort": 2,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Bank Account Details (Passbook / Cancelled Cheque)",
+          "hi": "बैंक खाता विवरण (पासबुक / रद्द चेक)",
+          "mr": "बँक खाते तपशील (पासबुक / रद्द चेक)"
+        },
+        "hint_i18n": {
+          "en": "For toolkit incentive and direct stipend credits",
+          "hi": "टूलकिट वाउचर और प्रत्यक्ष वजीफा राशि हेतु",
+          "mr": "टूलकिट अनुदान आणि भत्त्यासाठी बँक तपशील"
+        }
+      },
+      {
+        "id": "d-vish-3",
+        "sort": 3,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Self-Declaration of Traditional Craft / Trade",
+          "hi": "पारंपरिक व्यवसाय का स्व-घोषणा पत्र",
+          "mr": "पारंपारिक व्यवसायाचे स्वयंघोषणापत्र"
+        },
+        "hint_i18n": {
+          "en": "Selected from 18 approved trades (Carpenter, Blacksmith, Potter, Tailor, Cobbler, etc.)",
+          "hi": "18 अनुमोदित व्यवसायों (बढ़ई, लोहार, कुम्हार, दर्जी आदि) में से चयनित",
+          "mr": "१८ अधिकृत व्यवसायांपैकी एकाची निवड (सुतार, लोहार, कुंभार, शिंपी इत्यादी)"
+        }
+      }
+    ],
+    "scheme_steps": [
+      {
+        "id": "s-vish-1",
+        "sort": 1,
+        "text_i18n": {
+          "en": "Visit nearest Common Service Centre (CSC) with Aadhaar and bank passbook.",
+          "hi": "आधार और बैंक पासबुक लेकर निकटतम कॉमन सर्विस सेंटर (CSC) पर जाएं।",
+          "mr": "आधार कार्ड आणि बँक पासबुक घेऊन जवळच्या ग्राहक सेवा केंद्रात (CSC) जा."
+        }
+      },
+      {
+        "id": "s-vish-2",
+        "sort": 2,
+        "text_i18n": {
+          "en": "Complete biometric authentication and select your traditional trade.",
+          "hi": "बायोमेट्रिक सत्यापन पूरा करें और अपना पारंपरिक ट्रेड चुनें।",
+          "mr": "बायोमेट्रिक पडताळणी पूर्ण करून आपला पारंपारिक व्यवसाय निवडा."
+        }
+      },
+      {
+        "id": "s-vish-3",
+        "sort": 3,
+        "text_i18n": {
+          "en": "Three-stage verification by Gram Panchayat / ULB, District Committee, and Screening Committee.",
+          "hi": "ग्राम पंचायत/नगर निकाय, जिला समिति और स्क्रीनिंग समिति द्वारा तीन चरणों में सत्यापन।",
+          "mr": "ग्रामपंचायत/स्थानिक स्वराज्य संस्था आणि जिल्हा समितीकडून पडताळणी."
+        }
+      },
+      {
+        "id": "s-vish-4",
+        "sort": 4,
+        "text_i18n": {
+          "en": "Attend 5-7 days basic skill training with ₹500/day stipend and receive Vishwakarma digital ID and ₹15,000 toolkit voucher.",
+          "hi": "₹500/दिन वजीफे के साथ 5-7 दिवसीय बुनियादी प्रशिक्षण लें और ₹15,000 का टूलकिट वाउचर प्राप्त करें।",
+          "mr": "५-७ दिवसांचे मोफत प्रशिक्षण घ्या (दररोज ₹५०० भत्ता) आणि ₹१५,००० चे टूलकिट अनुदान मिळवा."
+        }
+      }
+    ]
+  },
+  {
+    "id": "c1000000-0000-0000-0000-000000000009",
+    "slug": "post-matric-sc",
+    "level": "central",
+    "state_code": null,
+    "category_id": "education",
+    "category": {
+      "id": "education",
+      "pillar": "liberty",
+      "name_i18n": {
+        "en": "Education & Youth",
+        "hi": "शिक्षा एवं युवा",
+        "mr": "शिक्षण आणि युवा"
+      }
+    },
+    "name_i18n": {
+      "en": "Post-Matric Scholarship for SC Students",
+      "hi": "अनुसूचित जाति के छात्रों के लिए पोस्ट-मैट्रिक छात्रवृत्ति",
+      "mr": "अनुसूचित जातीच्या विद्यार्थ्यांसाठी मॅट्रिकोत्तर शिष्यवृत्ती"
+    },
+    "summary_i18n": {
+      "en": "Financial assistance to Scheduled Caste students studying at post-matriculation or post-secondary stage.",
+      "hi": "मैट्रिक के बाद या उच्च शिक्षा प्राप्त कर रहे अनुसूचित जाति के विद्यार्थियों के लिए व्यापक वित्तीय सहायता।",
+      "mr": "इयत्ता दहावीनंतरचे उच्च शिक्षण घेणाऱ्या अनुसूचित जातीच्या विद्यार्थ्यांसाठी सर्वसमावेशक शिष्यवृत्ती."
+    },
+    "benefit_i18n": {
+      "en": "100% compulsory non-refundable college fees reimbursement plus monthly maintenance allowance directly credited via DBT.",
+      "hi": "100% अनिवार्य गैर-वापसी योग्य शिक्षण शुल्क प्रतिपूर्ति तथा डीबीटी द्वारा मासिक निर्वाह भत्ता।",
+      "mr": "१००% महाविद्यालयीन शिक्षण शुल्क माफी आणि राहण्या-खाण्यासाठी थेट मासिक निर्वाह भत्ता."
+    },
+    "benefit_tier": 3,
+    "ease": 2,
+    "status": "open",
+    "apply_url": "https://scholarships.gov.in/",
+    "source_url": "https://socialjustice.gov.in/schemes/post-matric-scholarship-sc",
+    "last_verified": "2026-08-18",
+    "articles": [
+      "15(4)",
+      "21A",
+      "46"
+    ],
+    "is_published": true,
+    "rules": {
+      "all": [
+        {
+          "id": "occ",
+          "field": "occupation",
+          "op": "includes",
+          "value": "student",
+          "reasonKey": "r.needStudent",
+          "fixKey": "fix.needStudent"
+        },
+        {
+          "id": "cat",
+          "field": "category",
+          "op": "eq",
+          "value": "sc",
+          "reasonKey": "r.needSC",
+          "fixKey": "fix.needSC"
+        },
+        {
+          "id": "inc",
+          "field": "incomeLakh",
+          "op": "lte",
+          "value": 2.5,
+          "tolerance": {
+            "pct": 0.15
+          },
+          "reasonKey": "r.incomeMax25",
+          "fixKey": "fix.incomeMax25"
+        }
+      ]
+    },
+    "scheme_documents": [
+      {
+        "id": "d-pmsc-1",
+        "sort": 1,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Caste Certificate (SC)",
+          "hi": "जाति प्रमाण पत्र (अनुसूचित जाति)",
+          "mr": "जात प्रमाणपत्र (SC)"
+        },
+        "hint_i18n": {
+          "en": "Digitally verified certificate issued by competent revenue authority",
+          "hi": "सक्षम राजस्व अधिकारी द्वारा जारी डिजिटल रूप से सत्यापित प्रमाण पत्र",
+          "mr": "सक्षम अधिकाऱ्याने दिलेला डिजिटल जात दाखला"
+        }
+      },
+      {
+        "id": "d-pmsc-2",
+        "sort": 2,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Family Annual Income Certificate (≤ ₹2.5 Lakh)",
+          "hi": "परिवार का वार्षिक आय प्रमाण पत्र (≤ ₹2.5 लाख)",
+          "mr": "वार्षिक कौटुंबिक उत्पन्न दाखला (२.५ लाखांपर्यंत)"
+        },
+        "hint_i18n": {
+          "en": "Issued by Tehsildar or Sub-Divisional Magistrate for current financial year",
+          "hi": "चालू वित्तीय वर्ष हेतु तहसीलदार द्वारा जारी",
+          "mr": "चालू आर्थिक वर्षाचा तहसीलदार यांनी दिलेला दाखला"
+        }
+      },
+      {
+        "id": "d-pmsc-3",
+        "sort": 3,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "College Admission Fee Receipt & Previous Marksheet",
+          "hi": "कॉलेज प्रवेश शुल्क रसीद एवं पिछली कक्षा की अंकतालिका",
+          "mr": "महाविद्यालयीन प्रवेश पावती आणि मागील वर्षाचे गुणपत्रक"
+        },
+        "hint_i18n": {
+          "en": "From recognized university or accredited educational institution",
+          "hi": "मान्यता प्राप्त विश्वविद्यालय या संस्थान से",
+          "mr": "मान्यताप्राप्त कॉलेज/विद्यापीठाची अधिकृत फी पावती"
+        }
+      }
+    ],
+    "scheme_steps": [
+      {
+        "id": "s-pmsc-1",
+        "sort": 1,
+        "text_i18n": {
+          "en": "Register on the National Scholarship Portal (scholarships.gov.in) or State scholarship portal (e.g., MahaDBT).",
+          "hi": "राष्ट्रीय छात्रवृत्ति पोर्टल (scholarships.gov.in) या राज्य पोर्टल (जैसे MahaDBT) पर पंजीकरण करें।",
+          "mr": "राष्ट्रीय शिष्यवृत्ती पोर्टल (NSP) किंवा महाडीबीटी (MahaDBT) वर नोंदणी करा."
+        }
+      },
+      {
+        "id": "s-pmsc-2",
+        "sort": 2,
+        "text_i18n": {
+          "en": "Fill educational and course details, upload Caste and Income certificates, and give bank account IFSC.",
+          "hi": "शैक्षणिक और पाठ्यक्रम विवरण भरें, जाति और आय प्रमाण पत्र अपलोड करें।",
+          "mr": "कोर्स व कॉलेज माहिती भरा, जात व उत्पन्न दाखला अपलोड करा."
+        }
+      },
+      {
+        "id": "s-pmsc-3",
+        "sort": 3,
+        "text_i18n": {
+          "en": "Your college/institute nodal officer verifies the application online.",
+          "hi": "आपका कॉलेज/संस्थान नोडल अधिकारी आवेदन का ऑनलाइन सत्यापन करता है।",
+          "mr": "आपले महाविद्यालय/संस्था अर्जाची ऑनलाइन पडताळणी करेल."
+        }
+      },
+      {
+        "id": "s-pmsc-4",
+        "sort": 4,
+        "text_i18n": {
+          "en": "Tuition fees paid to college and maintenance allowance credited directly into your Aadhaar-linked bank account.",
+          "hi": "शिक्षण शुल्क कॉलेज को और निर्वाह भत्ता सीधे आपके आधार से जुड़े खाते में स्थानांतरित होगा।",
+          "mr": "कॉलेज फी थेट कॉलेजला आणि निर्वाह भत्ता आपल्या बँक खात्यात जमा होतो."
+        }
+      }
+    ]
+  },
+  {
+    "id": "c1000000-0000-0000-0000-000000000010",
+    "slug": "stand-up-india",
+    "level": "central",
+    "state_code": null,
+    "category_id": "livelihood",
+    "category": {
+      "id": "livelihood",
+      "pillar": "liberty",
+      "name_i18n": {
+        "en": "Livelihood & Enterprise",
+        "hi": "आजीविका एवं उद्यम",
+        "mr": "उपजीविका आणि उद्योग"
+      }
+    },
+    "name_i18n": {
+      "en": "Stand-Up India Scheme",
+      "hi": "स्टैंड-अप इंडिया योजना",
+      "mr": "स्टँड-अप इंडिया योजना"
+    },
+    "summary_i18n": {
+      "en": "Bank loans between ₹10 Lakh and ₹1 Crore to Scheduled Caste (SC), Scheduled Tribe (ST) or Women entrepreneurs.",
+      "hi": "अनुसूचित जाति (SC), अनुसूचित जनजाति (ST) या महिला उद्यमियों को ₹10 लाख से ₹1 करोड़ तक का बैंक ऋण।",
+      "mr": "अनुसूचित जाती (SC), अनुसूचित जमाती (ST) किंवा महिला उद्योजकांना ₹१० लाख ते ₹१ कोटींचे बँक कर्ज."
+    },
+    "benefit_i18n": {
+      "en": "Composite bank loans from ₹10 Lakh up to ₹100 Lakh for setting up a greenfield enterprise in manufacturing, services, or agri-allied trading.",
+      "hi": "विनिर्माण, सेवा या व्यापार में नए उद्यम की स्थापना हेतु ₹10 लाख से ₹1 करोड़ तक का समग्र बैंक ऋण।",
+      "mr": "उत्पादन, सेवा किंवा व्यवसाय क्षेत्रातील नवीन उद्योग सुरू करण्यासाठी ₹१० लाख ते ₹१ कोटींचे कर्ज."
+    },
+    "benefit_tier": 3,
+    "ease": 1,
+    "status": "open",
+    "apply_url": "https://www.standupmitra.in/",
+    "source_url": "https://www.standupmitra.in/",
+    "last_verified": "2026-08-25",
+    "articles": [
+      "14",
+      "15",
+      "19(1)(g)",
+      "39A"
+    ],
+    "is_published": true,
+    "rules": {
+      "all": [
+        {
+          "id": "age",
+          "field": "age",
+          "op": "gte",
+          "value": 18,
+          "reasonKey": "r.needAge18",
+          "fixKey": "fix.needAge18"
+        },
+        {
+          "any": [
+            {
+              "id": "sc_st",
+              "field": "category",
+              "op": "in",
+              "value": [
+                "sc",
+                "st"
+              ],
+              "reasonKey": "r.needSCorST",
+              "fixKey": "fix.needSCorST"
+            },
+            {
+              "id": "fem",
+              "field": "gender",
+              "op": "eq",
+              "value": "female",
+              "reasonKey": "r.needFemaleOrSCST",
+              "fixKey": "fix.needFemaleOrSCST"
+            }
+          ]
+        }
+      ]
+    },
+    "scheme_documents": [
+      {
+        "id": "d-sui-1",
+        "sort": 1,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Proof of Identity & Address (Aadhaar / Voter ID / Passport)",
+          "hi": "पहचान और पते का प्रमाण (आधार / मतदाता पहचान पत्र / पासपोर्ट)",
+          "mr": "ओळख आणि पत्त्याचा पुरावा (आधार / मतदार ओळखपत्र / पासपोर्ट)"
+        },
+        "hint_i18n": {
+          "en": "Official government photo ID",
+          "hi": "आधिकारिक सरकारी फोटो पहचान पत्र",
+          "mr": "शासकीय फोटो ओळखपत्र"
+        }
+      },
+      {
+        "id": "d-sui-2",
+        "sort": 2,
+        "mandatory": false,
+        "name_i18n": {
+          "en": "Caste Certificate (if applying under SC/ST quota)",
+          "hi": "जाति प्रमाण पत्र (यदि एससी/एसटी कोटे के तहत आवेदन कर रहे हैं)",
+          "mr": "जात प्रमाणपत्र (SC/ST प्रवर्गातून अर्ज करत असल्यास)"
+        },
+        "hint_i18n": {
+          "en": "Issued by authorized revenue officer (not required for general women applicants)",
+          "hi": "सक्षम प्राधिकारी द्वारा जारी (सामान्य वर्ग की महिलाओं के लिए आवश्यक नहीं)",
+          "mr": "सक्षम महसूल अधिकाऱ्याने दिलेला दाखला"
+        }
+      },
+      {
+        "id": "d-sui-3",
+        "sort": 3,
+        "mandatory": true,
+        "name_i18n": {
+          "en": "Detailed Project Report (DPR) & Business Plan",
+          "hi": "विस्तृत परियोजना रिपोर्ट (डीपीआर) एवं व्यापार योजना",
+          "mr": "सविस्तर प्रकल्प अहवाल (DPR) आणि व्यवसाय आराखडा"
+        },
+        "hint_i18n": {
+          "en": "Estimated capital expenditure, machinery cost, and projected revenues",
+          "hi": "अनुमानित पूंजी व्यय, मशीनरी लागत और अनुमानित राजस्व विवरण",
+          "mr": "प्रकल्पाचा अंदाजे खर्च, मशिनरी आणि संभाव्य नफा-तोटा विवरण"
+        }
+      }
+    ],
+    "scheme_steps": [
+      {
+        "id": "s-sui-1",
+        "sort": 1,
+        "text_i18n": {
+          "en": "Register on the Stand-Up Mitra portal (standupmitra.in) or visit any Scheduled Commercial Bank branch.",
+          "hi": "स्टैंड-अप मित्रा पोर्टल (standupmitra.in) पर पंजीकरण करें या किसी भी वाणिज्यिक बैंक शाखा में जाएं।",
+          "mr": "स्टँड-अप मित्रा पोर्टल (standupmitra.in) वर नोंदणी करा किंवा कोणत्याही बँकेच्या शाखेत जा."
+        }
+      },
+      {
+        "id": "s-sui-2",
+        "sort": 2,
+        "text_i18n": {
+          "en": "Select 'Trainee Borrower' (for handholding/mentorship) or 'Ready Borrower' (if project report is ready).",
+          "hi": "'प्रशिक्षु उधारकर्ता' (सहायता/मार्गदर्शन हेतु) या 'तैयार उधारकर्ता' चुनें।",
+          "mr": "आपला प्रकल्प तयार असल्यास 'Ready Borrower' किंवा मार्गदर्शनासाठी 'Trainee Borrower' निवडा."
+        }
+      },
+      {
+        "id": "s-sui-3",
+        "sort": 3,
+        "text_i18n": {
+          "en": "Bank appraises project viability and verifies that the promoter holds at least 51% stake in the enterprise.",
+          "hi": "बैंक परियोजना व्यवहार्यता का मूल्यांकन करता है और सुनिश्चित करता है कि प्रमोटर की हिस्सेदारी कम से कम 51% हो।",
+          "mr": "बँक प्रकल्पाची पडताळणी करेल आणि उद्योजकाची किमान ५१% मालकी असल्याची खात्री करेल."
+        }
+      },
+      {
+        "id": "s-sui-4",
+        "sort": 4,
+        "text_i18n": {
+          "en": "Sanction of term loan and working capital credit with repayment period up to 7 years.",
+          "hi": "7 वर्ष तक की पुनर्भुगतान अवधि के साथ टर्म लोन और कार्यशील पूंजी ऋण की स्वीकृति।",
+          "mr": "७ वर्षांच्या परतफेड कालावधीसह मुदत कर्ज आणि खेळते भांडवल मंजूर केले जाते."
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800 min-h-screen flex flex-col font-sans;
+  }
+}
+
+/* Print Stylesheet for Printable Document Checklist per TRD & UI spec */
+@media print {
+  header,
+  footer,
+  aside,
+  nav,
+  .no-print,
+  button,
+  .pillar-rail,
+  .wizard-progress {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-sheet {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 1rem !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .page-break {
+    page-break-after: always;
+  }
+}
+
+.print-only {
+  display: none;
+}
